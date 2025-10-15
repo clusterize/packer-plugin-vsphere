@@ -8,7 +8,7 @@ import (
 	"log"
 
 	"github.com/hashicorp/packer-plugin-sdk/multistep"
-	"github.com/hashicorp/packer-plugin-vsphere/builder/vsphere/driver"
+	"github.com/clusterize/packer-plugin-vsphere/builder/vsphere/driver"
 )
 
 func GetVMMetadata(vm *driver.VirtualMachineDriver, state multistep.StateBag) map[string]string {

@@ -16,7 +16,7 @@ import (
 
 	"github.com/hashicorp/packer-plugin-sdk/multistep"
 	packersdk "github.com/hashicorp/packer-plugin-sdk/packer"
-	"github.com/hashicorp/packer-plugin-vsphere/builder/vsphere/driver"
+	"github.com/clusterize/packer-plugin-vsphere/builder/vsphere/driver"
 )
 
 type WaitIpConfig struct {
@@ -40,6 +40,7 @@ type WaitIpConfig struct {
 	// * `192.168.1.0/24` - only allow ipv4 addresses from 192.168.1.1 to 192.168.1.254
 	WaitAddress *string `mapstructure:"ip_wait_address"`
 	ipnet       *net.IPNet
+	SkipIpWait  bool `mapstructure:"skip_ip_wait"`
 
 	// WaitTimeout is a total timeout. If the virtual machine changes IP frequently, and does not settle down, wait
 	// until the timeout expires.
@@ -79,6 +80,11 @@ func (c *WaitIpConfig) GetIPNet() *net.IPNet {
 }
 
 func (s *StepWaitForIp) Run(ctx context.Context, state multistep.StateBag) multistep.StepAction {
+	if s.Config.SkipIpWait {
+		log.Printf("[INFO] Skipping wait-for-IP due to skip_wait_ip=true")
+		return multistep.ActionContinue
+	}
+
 	ui := state.Get("ui").(packersdk.Ui)
 	vm := state.Get("vm").(*driver.VirtualMachineDriver)
 

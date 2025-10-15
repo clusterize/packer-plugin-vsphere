@@ -19,8 +19,8 @@ import (
 	packersdk "github.com/hashicorp/packer-plugin-sdk/packer"
 	"github.com/hashicorp/packer-plugin-sdk/template/config"
 	"github.com/hashicorp/packer-plugin-sdk/template/interpolate"
-	vsphere "github.com/hashicorp/packer-plugin-vsphere/builder/vsphere/common"
-	vspherepost "github.com/hashicorp/packer-plugin-vsphere/post-processor/vsphere"
+	vsphere "github.com/clusterize/packer-plugin-vsphere/builder/vsphere/common"
+	vspherepost "github.com/clusterize/packer-plugin-vsphere/post-processor/vsphere"
 	"github.com/vmware/govmomi"
 )
 

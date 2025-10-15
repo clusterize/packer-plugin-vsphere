@@ -6,7 +6,7 @@ package driver
 import (
 	"testing"
 
-	"github.com/hashicorp/packer-plugin-vsphere/builder/vsphere/common/utils"
+	"github.com/clusterize/packer-plugin-vsphere/builder/vsphere/common/utils"
 )
 
 func TestHostAcc(t *testing.T) {

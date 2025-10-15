@@ -11,7 +11,7 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 	"github.com/hashicorp/packer-plugin-sdk/multistep"
-	"github.com/hashicorp/packer-plugin-vsphere/builder/vsphere/driver"
+	"github.com/clusterize/packer-plugin-vsphere/builder/vsphere/driver"
 )
 
 func TestHardwareConfig_Prepare(t *testing.T) {

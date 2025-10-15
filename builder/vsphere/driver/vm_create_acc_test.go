@@ -7,7 +7,7 @@ import (
 	"log"
 	"testing"
 
-	"github.com/hashicorp/packer-plugin-vsphere/builder/vsphere/common/utils"
+	"github.com/clusterize/packer-plugin-vsphere/builder/vsphere/common/utils"
 )
 
 func TestVMAcc_create(t *testing.T) {

@@ -1,4 +1,4 @@
-module github.com/hashicorp/packer-plugin-vsphere
+module github.com/clusterize/packer-plugin-vsphere
 
 go 1.23.11
 

@@ -10,8 +10,8 @@ import (
 	"testing"
 
 	"github.com/hashicorp/packer-plugin-sdk/acctest"
-	commonT "github.com/hashicorp/packer-plugin-vsphere/builder/vsphere/common/testing"
-	"github.com/hashicorp/packer-plugin-vsphere/builder/vsphere/common/utils"
+	commonT "github.com/clusterize/packer-plugin-vsphere/builder/vsphere/common/testing"
+	"github.com/clusterize/packer-plugin-vsphere/builder/vsphere/common/utils"
 	"github.com/vmware/govmomi/vim25/types"
 )
 

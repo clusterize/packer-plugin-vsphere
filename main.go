@@ -7,12 +7,12 @@ import (
 	"github.com/hashicorp/packer-plugin-sdk/plugin"
 	"log"
 
-	"github.com/hashicorp/packer-plugin-vsphere/builder/vsphere/clone"
-	"github.com/hashicorp/packer-plugin-vsphere/builder/vsphere/iso"
-	"github.com/hashicorp/packer-plugin-vsphere/builder/vsphere/supervisor"
-	"github.com/hashicorp/packer-plugin-vsphere/post-processor/vsphere"
-	vsphereTemplate "github.com/hashicorp/packer-plugin-vsphere/post-processor/vsphere-template"
-	"github.com/hashicorp/packer-plugin-vsphere/version"
+	"github.com/clusterize/packer-plugin-vsphere/builder/vsphere/clone"
+	"github.com/clusterize/packer-plugin-vsphere/builder/vsphere/iso"
+	"github.com/clusterize/packer-plugin-vsphere/builder/vsphere/supervisor"
+	"github.com/clusterize/packer-plugin-vsphere/post-processor/vsphere"
+	vsphereTemplate "github.com/clusterize/packer-plugin-vsphere/post-processor/vsphere-template"
+	"github.com/clusterize/packer-plugin-vsphere/version"
 )
 
 func main() {

@@ -13,7 +13,7 @@ import (
 	"github.com/hashicorp/packer-plugin-sdk/template/config"
 	"github.com/hashicorp/packer-plugin-sdk/template/interpolate"
 
-	"github.com/hashicorp/packer-plugin-vsphere/builder/vsphere/common"
+	"github.com/clusterize/packer-plugin-vsphere/builder/vsphere/common"
 )
 
 const (

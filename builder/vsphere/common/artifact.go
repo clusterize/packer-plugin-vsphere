@@ -9,7 +9,7 @@ import (
 	"os"
 
 	registryimage "github.com/hashicorp/packer-plugin-sdk/packer/registry/image"
-	"github.com/hashicorp/packer-plugin-vsphere/builder/vsphere/driver"
+	"github.com/clusterize/packer-plugin-vsphere/builder/vsphere/driver"
 	"github.com/vmware/govmomi/object"
 )
 

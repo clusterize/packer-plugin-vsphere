@@ -13,7 +13,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hashicorp/packer-plugin-vsphere/builder/vsphere/common/utils"
+	"github.com/clusterize/packer-plugin-vsphere/builder/vsphere/common/utils"
 	"github.com/vmware/govmomi"
 	"github.com/vmware/govmomi/find"
 	"github.com/vmware/govmomi/session"

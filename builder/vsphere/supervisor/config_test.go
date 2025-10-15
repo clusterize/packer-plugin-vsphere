@@ -6,7 +6,7 @@ package supervisor_test
 import (
 	"testing"
 
-	"github.com/hashicorp/packer-plugin-vsphere/builder/vsphere/supervisor"
+	"github.com/clusterize/packer-plugin-vsphere/builder/vsphere/supervisor"
 )
 
 func TestConfig_Minimal(t *testing.T) {

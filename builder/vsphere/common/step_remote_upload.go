@@ -10,7 +10,7 @@ import (
 
 	"github.com/hashicorp/packer-plugin-sdk/multistep"
 	packersdk "github.com/hashicorp/packer-plugin-sdk/packer"
-	"github.com/hashicorp/packer-plugin-vsphere/builder/vsphere/driver"
+	"github.com/clusterize/packer-plugin-vsphere/builder/vsphere/driver"
 )
 
 const DefaultRemoteCachePath = "packer_cache"

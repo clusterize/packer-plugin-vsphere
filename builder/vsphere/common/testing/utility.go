@@ -9,8 +9,8 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/hashicorp/packer-plugin-vsphere/builder/vsphere/common/utils"
-	"github.com/hashicorp/packer-plugin-vsphere/builder/vsphere/driver"
+	"github.com/clusterize/packer-plugin-vsphere/builder/vsphere/common/utils"
+	"github.com/clusterize/packer-plugin-vsphere/builder/vsphere/driver"
 )
 
 func NewVMName() string {
